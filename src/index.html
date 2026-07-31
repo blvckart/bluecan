@@ -121,30 +121,7 @@
   .bin-float{position:absolute;bottom:40px;right:6%;width:230px;animation:floaty 5s ease-in-out infinite;filter:drop-shadow(0 30px 26px rgba(13,43,78,.35));}
   @keyframes floaty{0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);}}
 
-  .stat-panel{
-    position:relative;z-index:5;
-    background:linear-gradient(120deg,var(--navy) 0%, var(--navy-deep) 100%);
-    border-radius:20px;
-    margin:-70px auto 0;
-    max-width:1000px;
-    box-shadow:0 40px 60px -20px rgba(8,25,47,.45);
-  }
-  .stat-panel .wrap{max-width:1000px;padding:0;}
-  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);}
-  .stat-item{
-    padding:34px 20px;text-align:center;color:#fff;
-    border-right:1px solid rgba(255,255,255,.09);
-  }
-  .stat-item:last-child{border-right:none;}
-  .stat-item .icon{
-    width:50px;height:50px;border-radius:50%;background:#fff;margin:0 auto 14px;
-    display:flex;align-items:center;justify-content:center;
-    transition:transform .35s var(--ease);
-  }
-  .stat-item:hover .icon{transform:translateY(-6px) rotate(-6deg);}
-  .stat-item .icon svg{width:22px;height:22px;color:var(--green);}
-  .stat-item h4{font-size:16px;font-weight:700;margin-bottom:4px;}
-  .stat-item p{font-size:12.5px;color:#a9c3de;line-height:1.5;}
+ 
 
   /* ===== SERVICES ===== */
   .services{padding:150px 0 90px;background:#f8fbfe;}
