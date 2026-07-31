@@ -121,7 +121,66 @@
   .bin-float{position:absolute;bottom:40px;right:6%;width:230px;animation:floaty 5s ease-in-out infinite;filter:drop-shadow(0 30px 26px rgba(13,43,78,.35));}
   @keyframes floaty{0%,100%{transform:translateY(0);}50%{transform:translateY(-14px);}}
 
- 
+/* STATS */
+ .stat-panel{
+    position:relative;
+    z-index:5;
+    background:linear-gradient(120deg,var(--navy) 0%, var(--navy-deep) 100%);
+    margin:-70px auto 0;
+    width:100%;
+    max-width:100%;
+    border-radius:0;
+    box-shadow:none;
+    padding:55px 0;
+}
+
+.stat-panel .wrap{
+    max-width:1400px;
+}
+
+.stat-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:60px;
+    align-items:start;
+}
+
+.stat-item{
+    padding:0;
+    text-align:center;
+    color:#fff;
+    border:none;
+}
+
+.stat-item .icon{
+    width:70px;
+    height:70px;
+    margin:0 auto 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:transparent;
+}
+
+.stat-item .icon svg{
+    width:42px;
+    height:42px;
+    color:var(--green);
+}
+
+.stat-item h4{
+    font-size:22px;
+    margin-bottom:12px;
+    font-weight:700;
+}
+
+.stat-item p{
+    font-size:16px;
+    line-height:1.7;
+    color:#b8c9dd;
+    max-width:280px;
+    margin:0 auto;
+}
 
   /* ===== SERVICES ===== */
   .services{padding:150px 0 90px;background:#f8fbfe;}
